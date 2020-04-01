@@ -1,4 +1,3 @@
--- NOTE: Before seeding employees into SQL Workbench, SEED first the roles and department first.
 INSERT INTO department(name) VALUES('Engineering');
 INSERT INTO department(name) VALUES('Management');
 INSERT INTO department(name) VALUES('Marketing');
@@ -11,17 +10,9 @@ INSERT INTO role(title, salary) VALUES ('Manager', 90000);
 INSERT INTO role(title, salary) VALUES ('Sales Lead', 40000);
 INSERT INTO role(title, salary) VALUES ('Lawyer', 65000);
 
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Jerry","Seinfeld", 2);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("George","Constanza", 1);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Elaine","Benes", 3);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Cosmo","Kramer", 4);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Rachel","Green", 1);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Phoebe","Boufay", 2);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Chandler","Bing", 3);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Joey","Tribbiani", 1);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Ross","Gellar", 2);
-INSERT INTO employee (first_name, last_name, role_id) VALUES ("Monica","Gellar", 4);
-
-
-
-
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Bruce','Lee',2);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Adam','Savage',3);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Ayrton','Senna',1);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Alex','Honnold',1);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Elon','Musk',2);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Jim','Lovell',4);

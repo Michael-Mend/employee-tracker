@@ -187,7 +187,7 @@ function addDept() {
 
 function updateEmployeeRole() {
     let employees = [
-        'Chris Hatfield',
+        'Bruce Lee',
         'Adam Savage',
         'Ayrton Senna',
         'Alex Honnold',

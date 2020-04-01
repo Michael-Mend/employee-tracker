@@ -20,8 +20,7 @@ connection.connect((err) => {
     console.log(`connected as id ${connection.threadId}`);
 })
 
-function initialPrompt() {
-
+function fig() {
     figlet('EMPLOYEE TRACKER', function (err, data) {
         if (err) {
             console.log('Something went wrong...');
@@ -30,7 +29,9 @@ function initialPrompt() {
         }
         console.log(chalk.green(data))
     });
+}
 
+function initialPrompt() {
     inquirer.prompt([{
         message: 'What would you like to do?',
         type: 'list',

@@ -1,8 +1,6 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql');
 const consoleTable = require('console.table');
-const chalk = require('chalk');
-const figlet = require('figlet');
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -12,24 +10,6 @@ const connection = mysql.createConnection({
     database: "employee_DB"
 })
 
-connection.connect((err) => {
-    if (err) {
-        console.error(`error connecting`, err.stack);
-        return
-    }
-    console.log(`connected as id ${connection.threadId}`);
-})
-
-function fig() {
-    figlet('EMPLOYEE TRACKER', function (err, data) {
-        if (err) {
-            console.log('Something went wrong...');
-            console.dir(err);
-            return;
-        }
-        console.log(chalk.green(data))
-    });
-}
 
 function initialPrompt() {
     inquirer.prompt([{

@@ -109,10 +109,8 @@ function addEmployee() {
                     if (err) throw err;
                 })
             console.log(answers.role);
-
+                initialPrompt();
         })
-    initialPrompt();
-
 }
 
 function addRole() {

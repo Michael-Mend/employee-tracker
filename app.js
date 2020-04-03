@@ -136,9 +136,8 @@ function addRole() {
                 if (err) throw err;
 
             })
-
+        initialPrompt();
     })
-    exit();
 }
 
 function addDept() {
@@ -159,9 +158,8 @@ function addDept() {
                     if (err) throw err;
 
                 })
-
+            initialPrompt();
         })
-    exit();
 }
 
 function updateEmployeeRole() {
@@ -204,7 +202,7 @@ function updateEmployeeRole() {
                     if (err) throw err;
                     console.log(result);
                 })
-
+            initialPrompt();
         })
 
 }
